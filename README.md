@@ -4,7 +4,7 @@
 Este repositorio contiene las soluciones para los dos ejercicios del Trabajo Práctico N° 1 de Procesamiento de Imágenes.
 
 ## 📄 Documentación
-* **[Consigna del Trabajo](Informe_TPPDI.pdf)**
+* **[Consigna del Trabajo](TUIA_PDI_TP1_2025_C2.pdf)**
 * **[Informe Final](Informe_TPPDI.pdf)**
 
 ## 📂 Estructura del Proyecto
