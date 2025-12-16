@@ -1,6 +1,19 @@
-# Trabajo Práctico 1 - Procesamiento de Imágenes 
+
+# Trabajo Práctico 1 - Procesamiento de Imágenes
 
 Este repositorio contiene las soluciones para los dos ejercicios del Trabajo Práctico N° 1 de Procesamiento de Imágenes.
+
+## 📄 Documentación
+* **[Consigna del Trabajo](Nombre_De_La_Consigna.pdf)**
+* **[Informe Final](Nombre_Del_Informe.pdf)**
+
+## 📂 Estructura del Proyecto
+El proyecto está organizado de la siguiente manera:
+* **`/src`**: Contiene los códigos fuente (`ej1.py`, `ej2.py`).
+* **`/data`**: Contiene las imágenes de entrada (formularios y .tif).
+* **`/`**: Archivos PDF y documentación.
+
+---
 
 ## 📋 Prerrequisitos
 
@@ -37,39 +50,43 @@ Se recomienda utilizar un entorno virtual para gestionar las dependencias del pr
     ```
 
 ---
-
 ## ▶️ Ejecución de los Scripts
+
+Para ejecutar los scripts, primero ingresa a la carpeta de código:
+```bash
+cd src
+```
 
 ### Ejercicio 1: Ecualización Local de Histograma (`ej1.py`)
 
-Este script aplica la técnica de ecualización local del histograma a una imagen para resaltar detalles.
+Este script aplica la técnica de ecualización local del histograma a una imagen para resaltar detalles ocultos. El código detecta automáticamente la imagen ubicada en la carpeta `data`.
 
-1.  **Asegúrate de tener el archivo de imagen**: El script `ej1.py` espera encontrar el archivo `Imagen_con_detalles_escondidos.tif` en la misma carpeta.
-2.  **Ejecuta el script:**
-    ```bash
-    python ej1.py
-    ```
-3.  **Salida**: El script mostrará varias ventanas con la imagen original y los resultados de la ecualización local con diferentes tamaños de ventana. Cierra las ventanas para finalizar. 
+1. **Ejecutar:**
+   ```bash
+   python ej1.py
+   ```
+2.  **Salida**: El script mostrará varias ventanas con la imagen original y los resultados de la ecualización local con diferentes tamaños de ventana. Cierra las ventanas para finalizar. 
 
 ### Ejercicio 2: Validación de Formularios (`ej2.py`)
 
-Este script procesa un conjunto de imágenes de formularios (`formulario_01.png` a `formulario_06.png`), valida cada campo según reglas específicas y genera un archivo CSV con los resultados.
+Este script procesa un lote de imágenes de formularios (`formulario_01.png` a `formulario_05.png`) ubicados en la carpeta `data`. Valida automáticamente el estado de los campos y genera un reporte detallado.
 
-1.  **Asegúrate de tener los archivos de formulario**: El script `ej2.py` espera encontrar los archivos `formulario_01.png`, `formulario_02.png`, ..., `formulario_06.png` en la misma carpeta.
-2.  **Ejecuta el script:**
-    ```bash
-    python ej2.py
-    ```
-3.  **Salida**:
+1. **Ejecutar:**
+   ```bash
+   python ej2.py
+   ```
+   
+2.  **Salida**:
     * **Consola**: Imprimirá el resumen de validación para cada formulario. 📝
     * **Archivo CSV**: Creará (o sobrescribirá) un archivo llamado `resultados_formularios.csv` con el estado ('OK' o 'MAL') de cada campo para cada formulario. 
     * **Ventana de Gráficos**: Mostrará una ventana con recortes de las celdas analizadas para el último formulario procesado. Cierra la ventana para finalizar.
 
 ---
 
-##  deactivate Desactivar el Entorno
+## Desactivar el Entorno
 
 Cuando termines de trabajar, puedes desactivar el entorno virtual simplemente ejecutando en la terminal:
 
 ```bash
 deactivate
+```
